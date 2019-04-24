@@ -9,5 +9,10 @@
             <class name="com.bdd.testng.runner.DemoRunner"/>
         </classes>
     </test>
+    <test name="Emp test" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.bdd.testng.runner.EmpRunner"/>
+        </classes>
+    </test>
 
 </suite>
