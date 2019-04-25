@@ -18,9 +18,10 @@ public class EmployeeSteps {
     }
 
     @When("^Employee get salary increased by (\\d+) dollar.$")
-    public void salaryUpdate(Integer ammount){
+    public void salaryUpdate(Integer ammount) throws Exception{
         this.salary += ammount;
         logger.info("employee salary updated");
+        Thread.sleep(5000);
     }
 
     @Then("^Employee salary is (\\d+)$")
